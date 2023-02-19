@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: $font;
+}
+
+body {
+  background: $black;
+}
+
+section {
+  max-width: 1330px;
+  margin: 90px auto;
+  background: $dark-grey;
+  padding: 80px;
+}
+
+h1 {
+  background-image: linear-gradient(341deg, $secondry, $primary);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.lg-3,
+.typewrite {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 45px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.button {
+  background-image: linear-gradient(341deg, #f43f5e, #f59e0b);
+  width: fit-content;
+  a {
+    background: #fff;
+    padding: 20px 40px;
+    transform: translate(-8px, -8px);
+    display: flex;
+    font-family: $second-font;
+    color: #000;
+    font-size: 18px;
+    transition: 0.3s all;
+    &:hover {
+      transform: translate(0px, 0px);
+    }
+  }
+}
+
+h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.highlight-color {
+  background-image: linear-gradient(341deg, #f43f5e, #f59e0b);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlighted-box {
+  margin: 0;
+  color: #f43f5e !important;
+  background: rgba(244, 63, 94, 0.1098039216);
+  width: fit-content;
+  padding: 7px 12px !important;
+  font-family: "Space Mono", monospace;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.button {
+  input[type="submit"] {
+    background: #fff;
+    padding: 15px 20px;
+    transform: translate(-5px, -5px);
+    display: flex;
+    font-family: "Space Mono", monospace;
+    color: #000;
+    transition: 0.3s all;
+    border: none;
+    font-size: 14px;
+    &:hover {
+      transform: translate(0px, 0px);
+    }
+  }
+}

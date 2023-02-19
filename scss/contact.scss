@@ -1,0 +1,103 @@
+.contact-section {
+  padding: 48px;
+  .container-fluid {
+    .row {
+      .column-1 {
+        .content {
+          p {
+            margin: 0;
+            margin-bottom: 20px;
+            i {
+              padding-right: 5px;
+              font-size: 20px;
+              color: #71717a;
+            }
+          }
+          .action-link {
+            color: #fff;
+            border-bottom: 1px solid #f5a119;
+            width: fit-content;
+          }
+        }
+      }
+      .form-column {
+        background: linear-gradient(90deg, #18181b, #262629);
+        border: 1px solid #3d3d43;
+        box-shadow: 6px 6px 0px 0px #3f3f46;
+        padding: 0;
+        .content {
+          form {
+            textarea {
+              width: 92%;
+              background: #262629;
+              padding: 12px;
+              border: none;
+              border-bottom: 1px solid #3b82f6;
+              color: #d1d5cf;
+              font-size: 17px;
+              margin: 28px;
+            }
+            .main-heading-form {
+              margin: 0;
+              padding: 20px;
+              font-size: 16px;
+              background: linear-gradient(90deg, #27272a, #27272a);
+            }
+            .contact-information {
+              padding: 22px 0;
+            }
+
+            .services {
+              padding: 22px 0;
+            }
+            .row {
+              justify-content: center;
+
+              padding-top: 11px;
+
+              input[type="text"],
+              input[type="email"],
+              input[type="tel"],
+              select,
+              textarea {
+                width: 29%;
+                background: #262629;
+                padding: 12px;
+                border: none;
+                border-bottom: 1px solid #3b82f6;
+                color: #d1d5cf;
+                font-size: 17px;
+                margin-right: 10px;
+              }
+
+              .item {
+                width: 30%;
+                margin-bottom: 6px;
+                label {
+                  font-size: 16px;
+                  color: #fff;
+                }
+              }
+            }
+            .divider {
+              padding: 0px 0;
+              border-top: 1px dashed #ffffff45;
+              margin-bottom: 35px;
+            }
+            .button {
+              margin-left: 33px;
+              margin-bottom: 35px;
+              input[type="submit"] {
+                padding: 15px 90px;
+                transform: translate(-8px, -8px);
+                &:hover {
+                  transform: translate(0px, 0px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

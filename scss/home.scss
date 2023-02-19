@@ -1,0 +1,97 @@
+.banner-section {
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        .content {
+          .typewriter {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            i {
+              font-size: 44px;
+              color: #9ca3af;
+              padding-right: 20px;
+            }
+            h2 {
+              overflow: hidden;
+              border-right: 5px solid white;
+              white-space: nowrap;
+              animation: typing 2s steps(30, end),
+                blink-caret 0.75s step-end infinite;
+              color: white;
+              font-family: "Space Mono", monospace;
+              font-size: 55px;
+              font-weight: 600;
+            }
+            /* The typing effect */
+            @keyframes typing {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+            }
+
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+              from,
+              to {
+                border-color: transparent;
+              }
+              50% {
+                border-color: $white;
+              }
+            }
+          }
+          .counts-row {
+            margin-top: 60px;
+            position: absolute;
+            width: 780px;
+            background: linear-gradient(45deg, #18181b, #27272a);
+            border-top: 1px solid;
+            border-image: linear-gradient(to right, #3c81f4, #f43f5e, #f59e0b) 1
+              0 0 0;
+            .col-md-4 {
+              padding: 24px;
+              .content {
+                display: flex;
+                align-items: center;
+                h3 {
+                  font-size: 48px;
+                  font-weight: 700;
+                  margin: 0;
+                  padding-right: 16px;
+                }
+                .title {
+                  margin-top: 0;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .column-2 {
+        .image {
+          width: 500px;
+          margin: 0 auto;
+          background: #fff;
+          img {
+            margin: -8px -8px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .button {
+        margin-top: 205px;
+      }
+    }
+
+    .brands-row {
+      justify-content: space-around;
+      align-items: center;
+      padding: 36px 0px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.project-source-section {
+  padding: 48px;
+  .container-fluid {
+    .header {
+      margin-bottom: 48px;
+      p {
+        margin-top: 30px;
+      }
+    }
+    .row {
+      .col-md-4 {
+        .content {
+          &:hover {
+            .inner-row {
+              background: linear-gradient(90deg, #18181b, #27272a);
+              border-bottom: 1px solid #27272a;
+              p {
+                color: #fff;
+              }
+              .number {
+                color: #fff;
+              }
+            }
+          }
+          .upper-content {
+            background: linear-gradient(333deg, #f43f5e 3%, #f59e0b 54%, #fff);
+            padding: 24px;
+            h4 {
+              font-size: 20px;
+              color: #18181b;
+            }
+            p {
+              color: #111827;
+              font-size: 16px;
+              margin: 0;
+              margin-top: 16px;
+            }
+          }
+
+          .inner-row {
+            background: #fff;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #f43f5e;
+            border-bottom: 1px solid #0000;
+            transition: 0.3s all;
+
+            p {
+              margin: 0;
+              font-family: "Space Mono", monospace;
+              color: #111827;
+              font-size: 15px;
+              font-weight: 600;
+              transition: 0.3s all;
+            }
+            .number {
+              font-family: "Space Mono", monospace;
+              color: #111827;
+              font-size: 15px;
+              font-weight: 600;
+              transition: 0.3s all;
+            }
+          }
+        }
+      }
+    }
+
+    .project-row {
+      align-items: center;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #18181b, #27272a);
+      padding: 40px;
+      &:hover {
+        .text-column {
+          .content {
+            h4 {
+              color: #f5a119;
+            }
+          }
+        }
+      }
+      .text-column {
+        padding-left: 40px;
+        .content {
+          .logo {
+            img {
+              width: auto;
+            }
+          }
+          h4 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            transition: 0.3s all;
+          }
+          p {
+            margin: 0;
+            font-size: 16px;
+          }
+          .sub-heading {
+            font-size: 16px;
+            color: #60a5fa;
+            font-weight: 800;
+            margin-bottom: 8px;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}
