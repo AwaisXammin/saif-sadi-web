@@ -1,9 +1,15 @@
 .services-section {
   padding: 48px;
+  @media (max-width: 1148px) {
+    padding: 20px;
+  }
   .container-fluid {
     .row {
       .col-md-4 {
         padding: 24px;
+        @media (max-width: 1018px) {
+          padding: 8px;
+        }
       }
       .content {
         .lg-3 {
@@ -29,6 +35,11 @@
           margin-bottom: 8px;
         }
       }
+      .button {
+        @media (max-width: 767px) {
+          margin-bottom: 70px;
+        }
+      }
 
       .box-item {
         .content {
@@ -50,6 +61,9 @@
               h3 {
                 font-weight: 700;
                 color: #111827;
+                @media (max-width: 1308px) {
+                  font-size: 22px !important;
+                }
               }
             }
 

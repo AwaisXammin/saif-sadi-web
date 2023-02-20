@@ -5,6 +5,9 @@
       .categories-column {
         background: #27272a;
         padding: 48px;
+        @media (max-width: 944px) {
+          padding: 32px;
+        }
         .content {
           p {
             margin-top: 12px;
@@ -57,6 +60,9 @@
       .newslatter-column {
         background: linear-gradient(45deg, #18181b, #27272a);
         padding: 48px;
+        @media (max-width: 944px) {
+          padding: 32px;
+        }
         .content {
           h6 {
             margin-top: 24px;
@@ -82,6 +88,14 @@
               color: #d1d5cf;
               font-size: 17px;
             }
+            .button {
+              input[type="submit"] {
+                @media (max-width: 431px) {
+                  padding: 11px 8px;
+                  font-size: 12px;
+                }
+              }
+            }
           }
         }
       }
@@ -92,12 +106,21 @@
       padding: 48px;
       border-top: 1px solid;
       border-image: linear-gradient(to right, #3c81f4, #f43f5e, #f59e0b) 1 0 0 0;
+      @media (max-width: 944px) {
+        padding: 32px;
+      }
       .content {
         .header {
           display: flex;
           justify-content: space-between;
           margin-bottom: 48px;
+          @media (max-width: 458px) {
+            flex-direction: column;
+          }
           .left {
+            @media (max-width: 458px) {
+              margin-bottom: 27px;
+            }
             p {
               margin-top: 15px;
             }
@@ -118,6 +141,16 @@
             width: 30%;
             margin: 0 15px;
             padding: 0;
+            @media (max-width: 1106px) {
+              margin-bottom: 28px;
+              width: 28%;
+              margin: 0 5px;
+            }
+            @media (max-width: 767px) {
+              width: 100%;
+              margin-bottom: 18px;
+            }
+
             &:hover {
               .content {
                 h5 {
@@ -130,6 +163,9 @@
                 width: 370px;
                 height: 246px;
                 object-fit: cover;
+                @media (max-width: 1337px) {
+                  width: 100%;
+                }
               }
             }
             .content {
@@ -141,6 +177,9 @@
                 font-weight: 700;
                 line-height: 1.3;
                 transition: 0.3s all;
+                @media (max-width: 1106px) {
+                  font-size: 20px;
+                }
               }
               p {
                 font-size: 16px;

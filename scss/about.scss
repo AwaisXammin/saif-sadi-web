@@ -13,11 +13,24 @@
           justify-content: space-between;
           background-size: cover;
           background-position: center;
+          @media (max-width: 767px) {
+            width: 100% !important;
+          }
           .name {
             background: #000;
             padding: 24px;
             width: fit-content;
             margin: 0 auto;
+            @media (max-width: 767px) {
+              margin-bottom: 40px;
+            }
+
+            @media (max-width: 375px) {
+              padding: 14px;
+              .lg-3 {
+                font-size: 18px !important;
+              }
+            }
             h4 {
             }
           }
@@ -33,6 +46,9 @@
             p {
               text-align: center;
               margin-bottom: 39px;
+              @media (max-width: 767px) {
+                margin: 20px;
+              }
             }
             .button {
               margin: 0 auto;
@@ -58,6 +74,9 @@
             margin-bottom: -12px;
           }
           h1 {
+            @media (max-width: 924px) {
+              margin-top: 15px;
+            }
             i {
               font-size: 30px;
               -webkit-text-fill-color: #9ca3af;
@@ -96,6 +115,9 @@
               align-items: center;
               justify-content: space-between;
               padding-top: 12px;
+              @media (max-width: 342px) {
+                padding-right: 0;
+              }
 
               .column-1 {
                 p {
@@ -151,6 +173,9 @@
       padding: 24px;
       .col-sm-12 {
         padding: 48px;
+        @media (max-width: 456px) {
+          padding: 15px;
+        }
         .content {
           .lg-3 {
             color: #000;

@@ -10,6 +10,9 @@
     .row {
       .col-md-4 {
         .content {
+          @media (max-width: 767px) {
+            margin-bottom: 18px;
+          }
           &:hover {
             .inner-row {
               background: linear-gradient(90deg, #18181b, #27272a);
@@ -71,6 +74,9 @@
       margin-bottom: 25px;
       background: linear-gradient(90deg, #18181b, #27272a);
       padding: 40px;
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
       &:hover {
         .text-column {
           .content {
@@ -82,6 +88,10 @@
       }
       .text-column {
         padding-left: 40px;
+        @media (max-width: 767px) {
+          padding-left: 0;
+          padding-top: 30px;
+        }
         .content {
           .logo {
             img {
