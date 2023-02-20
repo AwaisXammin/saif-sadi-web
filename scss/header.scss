@@ -1,0 +1,57 @@
+header {
+  background: linear-gradient(90deg, #18181b, #27272a);
+  nav {
+    justify-content: space-between;
+    width: 70%;
+    background: none !important;
+    margin: 0 auto;
+    padding: 0 !important;
+
+    .navbar-toggler {
+      border-color: rgb(255 255 255 / 55%) !important;
+      color: #ffffff0a !important;
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+    }
+
+    @media (max-width: 1559px) {
+      width: 90%;
+    }
+    .navbar-brand {
+      width: 54px;
+    }
+    .navbar-collapse {
+      justify-content: end;
+      .navbar-nav {
+        li {
+          background: linear-gradient(207deg, #27272a, #18181b);
+          padding: 16px 21px;
+          transition: 0.3s all;
+          &:hover {
+            background: #2358de;
+            .nav-link {
+              color: #fff;
+            }
+          }
+          .nav-link {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s all;
+            svg {
+              margin-top: -5px;
+              margin-right: 1px;
+            }
+          }
+        }
+        .active {
+          background: linear-gradient(333deg, #f43f5e 3%, #f59e0b);
+          a {
+            color: #111827;
+          }
+        }
+      }
+    }
+  }
+}
