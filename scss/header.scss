@@ -20,35 +20,37 @@ header {
     }
     .navbar-brand {
       width: 54px;
+      img {
+        width: 155%;
+      }
     }
     .navbar-collapse {
       justify-content: end;
       .navbar-nav {
         li {
-          background: linear-gradient(207deg, #27272a, #18181b);
           padding: 16px 21px;
           transition: 0.3s all;
-          &:hover {
-            background: #2358de;
-            .nav-link {
-              color: #fff;
+          .button {
+            a {
+              padding: 10px 40px;
+              font-family: "Inter";
+              font-size: 15px;
+              font-weight: 500;
             }
           }
+
           .nav-link {
             color: #fff;
             font-size: 15px;
             font-weight: 500;
             transition: 0.3s all;
+            &:hover {
+              color: #f4534d;
+            }
             svg {
               margin-top: -5px;
               margin-right: 1px;
             }
-          }
-        }
-        .active {
-          background: linear-gradient(333deg, #f43f5e 3%, #f59e0b);
-          a {
-            color: #111827;
           }
         }
       }
